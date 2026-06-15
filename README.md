@@ -1,0 +1,22 @@
+# AJAR Network Landing
+
+Single-page landing for the **AJAR Network** (Access to Justice Action Research), a project of the Praxis Mobilities Collaborative. Static, vanilla HTML/CSS/JS, multilingual (EN / FR / ਪੰਜਾਬੀ / 中文).
+
+## Files
+- `index.html` — markup
+- `style.css` — styles + design tokens
+- `app.js` — language switcher + strings
+
+## Run locally
+Open `index.html`, or serve:
+```sh
+python3 -m http.server
+```
+
+## Hosting (GitHub Pages)
+1. Repo **Settings → Pages**.
+2. **Source**: Deploy from a branch.
+3. **Branch**: `main` / `/ (root)`, then **Save**.
+4. Site goes live at `https://pushreset.github.io/ajar-network-landing/`.
+
+No build step — Pages serves the static files directly.

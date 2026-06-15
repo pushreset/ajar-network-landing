@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Archivo:wght@400;500;600;700&family=Noto+Sans+Gurmukhi:wght@400;600;700&family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  ::selection { background: #f4c20d; color: #141210; }
+</style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column;background:#f7f4ee;color:#141210;font-family:'Archivo','Noto Sans SC','Noto Sans Gurmukhi',sans-serif;-webkit-font-smoothing:antialiased;">
+
+  <!-- four-direction ribbon -->
+  <div style="display:flex;height:8px;flex:0 0 auto;">
+    <div style="flex:1;background:#141210;"></div>
+    <div style="flex:1;background:#c0322a;"></div>
+    <div style="flex:1;background:#f4c20d;"></div>
+    <div style="flex:1;background:#f7f4ee;box-shadow:inset 0 0 0 1.5px rgba(20,18,16,0.28);"></div>
+  </div>
+
+  <!-- header -->
+  <header style="flex:0 0 auto;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:24px 56px;border-bottom:1.5px solid rgba(20,18,16,0.12);">
+    <div style="display:flex;align-items:center;gap:14px;">
+      <div style="display:flex;align-items:baseline;gap:8px;line-height:1;">
+        <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:25px;letter-spacing:-0.02em;">AJAR</span>
+        <span style="font-family:'Archivo',sans-serif;font-weight:600;font-size:18px;letter-spacing:0.01em;color:rgba(20,18,16,0.62);">Network</span>
+      </div>
+    </div>
+    <div style="display:flex;gap:7px;">
+      <sc-for list="{{ pills }}" as="pill" hint-placeholder-count="4">
+        <button style="{{ pill.style }}" style-hover="border-color:#141210;" onClick="{{ pill.onClick }}">{{ pill.label }}</button>
+      </sc-for>
+    </div>
+  </header>
+
+  <!-- hero -->
+  <section style="flex:1;position:relative;overflow:hidden;display:flex;align-items:center;padding:72px 56px;">
+    <div style="position:relative;z-index:2;width:100%;max-width:1320px;margin:0 auto;">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:26px;">
+        <span style="width:12px;height:12px;background:{{ accent }};flex:0 0 auto;"></span>
+        <span style="font-weight:600;font-size:14px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(20,18,16,0.62);">{{ t.subtitle }}</span>
+      </div>
+      <h1 style="margin:0;max-width:22ch;border-left:10px solid {{ accent }};padding-left:36px;font-family:'Bricolage Grotesque','Noto Sans SC','Noto Sans Gurmukhi',sans-serif;font-weight:800;font-size:clamp(30px,3.6vw,54px);line-height:1.04;letter-spacing:-0.018em;color:#141210;text-wrap:balance;">{{ t.statement }}</h1>
+    </div>
+  </section>
+
+  <!-- action band -->
+  <section style="flex:0 0 auto;background:#141210;color:#f7f4ee;padding:54px 56px 40px;">
+    <div style="max-width:1320px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-end;gap:56px;flex-wrap:wrap;">
+      <div style="flex:1 1 420px;min-width:300px;">
+        <div style="font-weight:600;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#f4c20d;margin-bottom:14px;">{{ t.whatisLabel }}</div>
+        <p style="margin:0 0 30px;max-width:560px;font-size:21px;line-height:1.45;color:rgba(247,244,238,0.88);font-family:'Archivo','Noto Sans SC','Noto Sans Gurmukhi',sans-serif;">{{ t.whatis }}</p>
+        <a href="#" style="display:inline-flex;align-items:center;gap:12px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:21px;text-decoration:none;background:{{ accent }};color:{{ ctaText }};padding:18px 32px;border-radius:6px;transition:transform .18s ease, background .18s ease, box-shadow .18s ease, color .18s ease;box-shadow:0 12px 26px rgba(192,50,42,0.32);" style-hover="background:#f4c20d;color:#141210;transform:translateY(-3px);box-shadow:0 18px 38px rgba(244,194,13,0.42);">{{ t.cta }} <span style="font-size:24px;line-height:0;">↗</span></a>
+      </div>
+      <div style="flex:0 1 auto;display:flex;flex-direction:column;align-items:flex-end;gap:14px;text-align:right;">
+        <div style="display:flex;align-items:center;gap:18px;font-size:16px;">
+          <a href="#" style="color:#f7f4ee;text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1.5px;transition:color .15s ease;" style-hover="color:#f4c20d;">{{ t.contact }}</a>
+          <span style="color:rgba(247,244,238,0.3);">/</span>
+          <a href="#" style="color:#f7f4ee;text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1.5px;transition:color .15s ease;" style-hover="color:#f4c20d;">{{ t.about }}</a>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1320px;margin:36px auto 0;padding-top:22px;border-top:1.5px solid rgba(247,244,238,0.16);font-size:14px;color:rgba(247,244,238,0.55);letter-spacing:0.01em;">A project of the Praxis Mobilities Collaborative · Vancouver, Canada / Paris, France</div>
+  </section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;accent&quot;: { &quot;editor&quot;: &quot;color&quot;, &quot;default&quot;: &quot;#c0322a&quot; }
+}">
+class Component extends DCLogic {
+  state = { lang: 'en' };
+
+  get STRINGS() {
+    return {
+      en: {
+        statement: "Supporting rights and access to justice for precariously housed and unhoused people and those who depend on public space",
+        subtitle: "AJAR Network — Access to Justice Action Research",
+        cta: "Add a signalement",
+        whatisLabel: "What is a signalement?",
+        whatis: "A signalement is a short report documenting an incident of institutional violence — a record that builds toward accountability.",
+        contact: "Contact us",
+        about: "About the Collaborative"
+      },
+      fr: {
+        statement: "Soutenir les droits et l'accès à la justice des personnes en situation de logement précaire ou sans-abri, et de celles qui dépendent de l'espace public",
+        subtitle: "Réseau AJAR — Recherche-action sur l'accès à la justice",
+        cta: "Déposer un signalement",
+        whatisLabel: "Qu'est-ce qu'un signalement ?",
+        whatis: "Un signalement est un court rapport documentant un incident de violence institutionnelle — une trace pour bâtir la responsabilité.",
+        contact: "Nous contacter",
+        about: "À propos du Collaboratif"
+      },
+      pa: {
+        statement: "ਅਸਥਿਰ ਰਿਹਾਇਸ਼ ਵਾਲੇ ਅਤੇ ਬੇਘਰ ਲੋਕਾਂ, ਅਤੇ ਜਨਤਕ ਥਾਂ 'ਤੇ ਨਿਰਭਰ ਲੋਕਾਂ ਦੇ ਹੱਕਾਂ ਅਤੇ ਨਿਆਂ ਤੱਕ ਪਹੁੰਚ ਦਾ ਸਮਰਥਨ",
+        subtitle: "AJAR ਨੈੱਟਵਰਕ — ਨਿਆਂ ਤੱਕ ਪਹੁੰਚ ਐਕਸ਼ਨ ਰਿਸਰਚ",
+        cta: "ਸਿਗਨਾਲਮੈਂਟ ਜੋੜੋ",
+        whatisLabel: "ਸਿਗਨਾਲਮੈਂਟ ਕੀ ਹੈ?",
+        whatis: "ਸਿਗਨਾਲਮੈਂਟ ਸੰਸਥਾਗਤ ਹਿੰਸਾ ਦੀ ਘਟਨਾ ਦਾ ਇੱਕ ਛੋਟਾ ਰਿਕਾਰਡ ਹੈ — ਜਵਾਬਦੇਹੀ ਵੱਲ ਵਧਣ ਵਾਲਾ ਇੱਕ ਦਸਤਾਵੇਜ਼।",
+        contact: "ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ",
+        about: "ਕੋਲੈਬੋਰੇਟਿਵ ਬਾਰੇ"
+      },
+      zh: {
+        statement: "支持居住不稳定者、无家可归者，以及依赖公共空间的人们的权利与诉诸司法的机会",
+        subtitle: "AJAR 网络 — 诉诸司法行动研究",
+        cta: "添加一份 signalement",
+        whatisLabel: "什么是 signalement？",
+        whatis: "signalement 是记录机构暴力事件的简短报告——一份推动问责的记录。",
+        contact: "联系我们",
+        about: "关于合作组织"
+      }
+    };
+  }
+
+  renderVals() {
+    const accent = this.props.accent ?? '#c0322a';
+    const lang = this.state.lang || 'en';
+    const t = this.STRINGS[lang] || this.STRINGS.en;
+    const ctaText = (accent === '#f4c20d' || accent === '#f5c518') ? '#141210' : '#f7f4ee';
+
+    const defs = [
+      { code: 'en', label: 'EN' },
+      { code: 'fr', label: 'FR' },
+      { code: 'pa', label: 'ਪੰਜਾਬੀ' },
+      { code: 'zh', label: '中文' }
+    ];
+    const font = "600 14px 'Archivo','Noto Sans SC','Noto Sans Gurmukhi',sans-serif";
+    const idle = { padding: '8px 13px', border: '1.5px solid rgba(20,18,16,0.22)', borderRadius: '7px', background: 'transparent', color: '#141210', font, cursor: 'pointer', lineHeight: 1, transition: 'border-color .15s ease' };
+    const active = { padding: '8px 13px', border: '1.5px solid #141210', borderRadius: '7px', background: accent, color: ctaText, font, cursor: 'pointer', lineHeight: 1, transition: 'border-color .15s ease' };
+    const pills = defs.map(d => ({
+      label: d.label,
+      onClick: () => this.setState({ lang: d.code }),
+      style: d.code === lang ? active : idle
+    }));
+
+    return { accent, lang, t, ctaText, pills };
+  }
+}
+</script>
+</body>
+</html>
