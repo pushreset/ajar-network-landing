@@ -8,6 +8,7 @@
       cta: "Add a signalement",
       whatisLabel: "What is a signalement?",
       whatis: "A signalement is a short report documenting an incident of institutional violence, a record that builds toward accountability.",
+      ctaPrompt: "Do you want to report a violation of your or another person's rights by the authorities?",
       contact: "Contact us",
       about: "About the Collaborative"
     },
@@ -17,6 +18,7 @@
       cta: "Déposer un signalement",
       whatisLabel: "Qu'est-ce qu'un signalement ?",
       whatis: "Un signalement est un court rapport documentant un incident de violence institutionnelle, une trace pour bâtir la responsabilité.",
+      ctaPrompt: "Souhaitez-vous signaler une violation de vos droits ou de ceux d'une autre personne par les autorités ?",
       contact: "Nous contacter",
       about: "À propos du Collaboratif"
     },
@@ -26,6 +28,7 @@
       cta: "ਸਿਗਨਾਲਮੈਂਟ ਜੋੜੋ",
       whatisLabel: "ਸਿਗਨਾਲਮੈਂਟ ਕੀ ਹੈ?",
       whatis: "ਸਿਗਨਾਲਮੈਂਟ ਸੰਸਥਾਗਤ ਹਿੰਸਾ ਦੀ ਘਟਨਾ ਦਾ ਇੱਕ ਛੋਟਾ ਰਿਕਾਰਡ ਹੈ,ਜਵਾਬਦੇਹੀ ਵੱਲ ਵਧਣ ਵਾਲਾ ਇੱਕ ਦਸਤਾਵੇਜ਼।",
+      ctaPrompt: "ਕੀ ਤੁਸੀਂ ਅਧਿਕਾਰੀਆਂ ਦੁਆਰਾ ਆਪਣੇ ਜਾਂ ਕਿਸੇ ਹੋਰ ਵਿਅਕਤੀ ਦੇ ਹੱਕਾਂ ਦੀ ਉਲੰਘਣਾ ਦੀ ਰਿਪੋਰਟ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
       contact: "ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ",
       about: "ਕੋਲੈਬੋਰੇਟਿਵ ਬਾਰੇ"
     },
@@ -35,6 +38,7 @@
       cta: "添加一份 signalement",
       whatisLabel: "什么是 signalement？",
       whatis: "signalement 是记录机构暴力事件的简短报告，一份推动问责的记录。",
+      ctaPrompt: "您想举报当局侵犯您或他人权利的行为吗？",
       contact: "联系我们",
       about: "关于合作组织"
     }

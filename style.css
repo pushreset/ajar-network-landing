@@ -121,6 +121,12 @@ body { margin: 0; }
   font-size: 21px; line-height: 1.45; color: rgba(247,244,238,0.88);
   font-family: 'Archivo', 'Noto Sans SC', 'Noto Sans Gurmukhi', sans-serif;
 }
+.cta-prompt {
+  margin: 0 0 18px; max-width: 560px;
+  font-size: 18px; line-height: 1.45; font-weight: 600;
+  color: var(--cream);
+  font-family: 'Archivo', 'Noto Sans SC', 'Noto Sans Gurmukhi', sans-serif;
+}
 .cta {
   display: inline-flex; align-items: center; gap: 12px;
   font-family: 'Bricolage Grotesque', sans-serif;
