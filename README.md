@@ -20,3 +20,8 @@ python3 -m http.server
 4. Site goes live at `https://pushreset.github.io/ajar-network-landing/`.
 
 No build step — Pages serves the static files directly.
+
+## License
+Source code (HTML/CSS/JS): [MIT](LICENSE).
+
+Logo, "AJAR Network" name and branding, and site copy are © Praxis Mobilities Collaborative, all rights reserved — not covered by MIT.
