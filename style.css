@@ -141,7 +141,7 @@ body { margin: 0; }
   transform: translateY(-3px);
   box-shadow: 0 18px 38px rgba(244,194,13,0.42);
 }
-.cta-arrow { font-size: 24px; line-height: 0; }
+.cta-logo { height: 28px; width: auto; display: block; }
 
 .action-right {
   flex: 0 1 auto;
