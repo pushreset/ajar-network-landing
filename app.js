@@ -4,7 +4,7 @@
   var STRINGS = {
     en: {
       statement: "Supporting rights and access to justice for precariously housed and unhoused people and those who depend on public space",
-      subtitle: "AJAR Network, Access to Justice Action Research",
+      subtitle: "Access to Justice Action Research",
       cta: "Add a signalement",
       whatisLabel: "What is a signalement?",
       whatis: "A signalement is a short report documenting an incident of institutional violence, a record that builds toward accountability.",
@@ -14,7 +14,7 @@
     },
     fr: {
       statement: "Soutenir les droits et l'accès à la justice des personnes en situation de logement précaire ou sans-abri, et de celles qui dépendent de l'espace public",
-      subtitle: "Réseau AJAR, Recherche-action sur l'accès à la justice",
+      subtitle: "Recherche-action sur l'accès à la justice",
       cta: "Déposer un signalement",
       whatisLabel: "Qu'est-ce qu'un signalement ?",
       whatis: "Un signalement est un court rapport documentant un incident de violence institutionnelle, une trace pour bâtir la responsabilité.",
@@ -24,7 +24,7 @@
     },
     pa: {
       statement: "ਅਸਥਿਰ ਰਿਹਾਇਸ਼ ਵਾਲੇ ਅਤੇ ਬੇਘਰ ਲੋਕਾਂ, ਅਤੇ ਜਨਤਕ ਥਾਂ 'ਤੇ ਨਿਰਭਰ ਲੋਕਾਂ ਦੇ ਹੱਕਾਂ ਅਤੇ ਨਿਆਂ ਤੱਕ ਪਹੁੰਚ ਦਾ ਸਮਰਥਨ",
-      subtitle: "AJAR ਨੈੱਟਵਰਕ,ਨਿਆਂ ਤੱਕ ਪਹੁੰਚ ਐਕਸ਼ਨ ਰਿਸਰਚ",
+      subtitle: "ਨਿਆਂ ਤੱਕ ਪਹੁੰਚ ਐਕਸ਼ਨ ਰਿਸਰਚ",
       cta: "ਸਿਗਨਾਲਮੈਂਟ ਜੋੜੋ",
       whatisLabel: "ਸਿਗਨਾਲਮੈਂਟ ਕੀ ਹੈ?",
       whatis: "ਸਿਗਨਾਲਮੈਂਟ ਸੰਸਥਾਗਤ ਹਿੰਸਾ ਦੀ ਘਟਨਾ ਦਾ ਇੱਕ ਛੋਟਾ ਰਿਕਾਰਡ ਹੈ,ਜਵਾਬਦੇਹੀ ਵੱਲ ਵਧਣ ਵਾਲਾ ਇੱਕ ਦਸਤਾਵੇਜ਼।",
@@ -34,7 +34,7 @@
     },
     zh: {
       statement: "支持居住不稳定者、无家可归者，以及依赖公共空间的人们的权利与诉诸司法的机会",
-      subtitle: "AJAR 网络,诉诸司法行动研究",
+      subtitle: "诉诸司法行动研究",
       cta: "添加一份 signalement",
       whatisLabel: "什么是 signalement？",
       whatis: "signalement 是记录机构暴力事件的简短报告，一份推动问责的记录。",
