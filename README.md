@@ -2,6 +2,8 @@
 
 Single-page landing for the **AJAR Network** (Access to Justice Action Research), a project of the Praxis Mobilities Collaborative. Static, vanilla HTML/CSS/JS, multilingual (EN / FR / ਪੰਜਾਬੀ / 中文).
 
+**Live site:** https://www.ajar.network
+
 ## Files
 - `index.html` — markup
 - `style.css` — styles + design tokens
