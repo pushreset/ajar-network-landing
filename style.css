@@ -40,7 +40,8 @@ body { margin: 0; }
   border-bottom: 1.5px solid rgba(20,18,16,0.12);
   flex-wrap: wrap;
 }
-.wordmark { display: flex; align-items: baseline; gap: 8px; line-height: 1; }
+.wordmark { display: flex; align-items: center; gap: 10px; line-height: 1; }
+.wordmark-logo { height: 34px; width: auto; display: block; }
 .wordmark-ajar {
   font-family: 'Bricolage Grotesque', sans-serif;
   font-weight: 800; font-size: 25px; letter-spacing: -0.02em;
